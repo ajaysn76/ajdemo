@@ -29,6 +29,12 @@ public class HelloController {
     return "Hello World!";
   }
 
+  @GET
+  @Path("/hello-world2")
+  public String helloWorld2() {
+    return "Hello World!";
+  }
+
   @POST
   @Path("/upload-file")
   public String uploadFile(@FormDataParam("file") InputStream fileInputStream,
